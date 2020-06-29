@@ -1,4 +1,4 @@
-## Adventure Game
+# Adventure Game
 
 This is a text endless endventure game using JAVA
 
@@ -6,7 +6,7 @@ NOTE - The dialogues used in these game are for pure purpose of fun and things t
 
 This program utilizes the OOPS concepts to make the code modular and efficient
 
-# I would like to explain them below on how the components were created and organized
+## I would like to explain them below on how the components were created and organized
 
 1. In the game program I have created 2 Core components
     a. Characters
