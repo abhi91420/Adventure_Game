@@ -9,8 +9,8 @@ This program utilizes the OOPS concepts to make the code modular and efficient
 ## I would like to explain them below on how the components were created and organized
 
 1. In the game program I have created 2 Core components
-    a. Characters
-    b. Enemies
+    ### a. Characters
+    ### b. Enemies
 2. Both of them have an inteface that defines the basic traits of each component
 3. Then there are classes that impliment these methods in the interface
 4. The implimentation can vary from class to class
