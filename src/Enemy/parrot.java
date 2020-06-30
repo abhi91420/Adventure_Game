@@ -1,4 +1,6 @@
-public class brocholi implements Enemies{
+package Enemy;
+
+public class parrot implements Enemies{
     private int attack = 10;
     private int health = 30;
 
@@ -11,12 +13,11 @@ public class brocholi implements Enemies{
     public int attack() {
         return attack;
     }
-
     public void name(){
-        System.out.print("Bitch Brocholi");
+        System.out.print("Chilipi chilaka");
     }
     @Override
     public void display() {
-        System.out.println("A female bitch Brocoli just appeared ewww!");
+        System.out.println("EYYYY!!! Donga chi po babu");
     }
 }

@@ -1,4 +1,6 @@
-public class popcorn implements Enemies{
+package Enemy;
+
+public class brocholi implements Enemies{
     private int attack = 10;
     private int health = 30;
 
@@ -11,11 +13,12 @@ public class popcorn implements Enemies{
     public int attack() {
         return attack;
     }
+
     public void name(){
-        System.out.print("Burnt caramel?");
+        System.out.print("Bitch Brocholi");
     }
     @Override
     public void display() {
-        System.out.println("A burnt Caramel has appeared ITS like BURNT BURNT");
+        System.out.println("A female bitch Brocoli just appeared ewww!");
     }
 }

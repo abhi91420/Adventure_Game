@@ -1,4 +1,6 @@
-public class parrot implements Enemies{
+package Enemy;
+
+public class popcorn implements Enemies{
     private int attack = 10;
     private int health = 30;
 
@@ -12,10 +14,10 @@ public class parrot implements Enemies{
         return attack;
     }
     public void name(){
-        System.out.print("Chilipi chilaka");
+        System.out.print("Burnt caramel?");
     }
     @Override
     public void display() {
-        System.out.println("EYYYY!!! Donga chi po babu");
+        System.out.println("A burnt Caramel has appeared ITS like BURNT BURNT");
     }
 }

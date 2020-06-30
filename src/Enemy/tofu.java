@@ -1,3 +1,5 @@
+package Enemy;
+
 public class tofu implements Enemies{
     private int attack = 10;
     private int health = 30;
@@ -12,9 +14,9 @@ public class tofu implements Enemies{
         return attack;
     }
     public void name(){
-        System.out.print("UGly tofu");
+        System.out.print("UGly Enemy.tofu");
     }
     public void display(){
-        System.out.println("THE tofu was so UGLY Abhi was jealous");
+        System.out.println("THE Enemy.tofu was so UGLY Abhi was jealous");
     }
 }

@@ -1,3 +1,5 @@
+package Characters;
+
 public class Dwight_Shurute implements Character {
     private int health = 100;
     private int attack = 15;

@@ -1,3 +1,5 @@
+package Characters;
+
 import java.util.Scanner;
 
 public class Mini_mini implements Character {
@@ -31,16 +33,13 @@ public class Mini_mini implements Character {
         System.out.println("Choose your power");
         System.out.println("1.invisible");
         System.out.println("2.Brute Strength");
-        switch (sc.nextInt()){
-            case 1:
-                System.out.println("Ayya EDIKI poyinav!!!");
-                break;
-            case 2:
-                System.out.println("BIG GUNS ARE OUT !!!!! RUN !!");
-                break;
-            default:
-                System.out.println("Kantichupu tho champesta");
-                break;
+        int i = sc.nextInt();
+        if (i == 1) {
+            System.out.println("Ayya EDIKI poyinav!!!");
+        } else if (i == 2) {
+            System.out.println("BIG GUNS ARE OUT !!!!! RUN !!");
+        } else {
+            System.out.println("Kantichupu tho champesta");
         }
 
     }

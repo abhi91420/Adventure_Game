@@ -1,3 +1,10 @@
+import Characters.Abhi_the_Ninja;
+import Characters.Character;
+import Characters.Dwight_Shurute;
+import Characters.Margarita_Pizza;
+import Characters.Mini_mini;
+import Enemy.*;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -5,7 +12,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner inp = new Scanner(System.in);
-        Character c;
+        Characters.Character c;
         int kill_count = 0;
         //welcome screen
         displayScreens ds = new displayScreens();
@@ -73,7 +80,7 @@ public class Main {
             boolean exit = false;
             int rand;
             Thread.sleep(3000);
-            System.out.println("^^^^^^^^^^^^^^^Enemies are Entering ^^^^^^^^^^^^^^^^^^");
+            System.out.println("^^^^^^^^^^^^^^^Enemy.Enemies are Entering ^^^^^^^^^^^^^^^^^^");
             Thread.sleep(3000);
             while (!exit) {
                 rand = (int) (Math.random() * elist.size());
@@ -98,7 +105,7 @@ public class Main {
             }
             Thread.sleep(2000);
             //print score
-            System.out.println("You killed :" + kill_count + " Enemies");
+            System.out.println("You killed :" + kill_count + " Enemy.Enemies");
             //thank you message
             Thread.sleep(2000);
             ds.exit_screen();

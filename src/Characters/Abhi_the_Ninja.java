@@ -1,6 +1,8 @@
-public class Margarita_Pizza implements Character {
-    private int health = 120;
-    private int attack = 16;
+package Characters;
+
+public class Abhi_the_Ninja implements Character {
+    private int health = 100;
+    private int attack = 19;
     private int heal = 20;
 
     @Override
@@ -10,12 +12,12 @@ public class Margarita_Pizza implements Character {
 
     @Override
     public void duck() {
-        System.out.println("pizza ducked pineapple mukka bokka");
+        System.out.println("Ducked Fucked");
     }
 
     @Override
     public void jump() {
-        System.out.println("Pizza jumped burned 5 calores!");
+        System.out.println("Jumping aagu 1 sec");
     }
 
     @Override
@@ -25,7 +27,7 @@ public class Margarita_Pizza implements Character {
 
     @Override
     public void power() {
-        System.out.println("Pizza is now Cheese burst");
+        System.out.println("ABBAHH Meripichesav nu!");
     }
 
     @Override
