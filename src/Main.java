@@ -31,28 +31,26 @@ public class Main {
             int choice = inp.nextInt();
             System.out.println("============================================");
             switch (choice) {
-                case 1:
+                case 1 -> {
                     System.out.println("You Won the game duh!? you chose : PAPAYI");
                     c = new Mini_mini();
-                    break;
-                case 2:
+                }
+                case 2 -> {
                     System.out.println("Really ? : ABHI?");
                     System.out.println("Are you sure?");
                     inp.next();
                     System.out.println("NE istam");
                     c = new Abhi_the_Ninja();
-                    break;
-                case 3:
+                }
+                case 3 -> {
                     System.out.println("Michellll!!!!! Im Here!");
                     c = new Dwight_Shurute();
-                    break;
-                case 4:
+                }
+                case 4 -> {
                     System.out.println("Dominos Your Pizza is here to kill!!!");
                     c = new Margarita_Pizza();
-                    break;
-                default:
-                    c = new Mini_mini();
-                    break;
+                }
+                default -> c = new Mini_mini();
             }
             System.out.println("============================================");
 
@@ -94,12 +92,8 @@ public class Main {
                 Thread.sleep(1000);
                 //player makes a choice
                 char_health =choice(char_health, char_attack, char_heal, enemy_attack, enemy_health, c);
-                if (char_health != 0) {
-                    exit = false;
-
-                } else {
-                    exit = true;//exit game
-                }
+                //exit game
+                exit = char_health == 0;
 
             }
             Thread.sleep(2000);
@@ -126,7 +120,9 @@ public class Main {
                 System.out.println("1.Attack");
                 System.out.println("2.Heal");
                 System.out.println("3.Power");
-                System.out.println("4.run");
+                System.out.println("4.Jump");
+                System.out.println("5.Duck");
+                System.out.println("6.run");
                 System.out.println("-----------------------------------------");
                 System.out.println("Ikkada nokkandi  : ");
 
@@ -134,7 +130,7 @@ public class Main {
                 var choice = sc.nextInt();
                 System.out.println("++++++++++++++++++++++++++++++++++++++++++");
                 switch (choice) {
-                    case 1:
+                    case 1 -> {
                         eh -= ca;
                         ch -= ea;
                         if (eh < 0) {
@@ -143,30 +139,26 @@ public class Main {
                         if (ch < 0) {
                             ch = 0;
                         }
-
                         Thread.sleep(1000);
                         System.out.println("You Attacked !\nCurrent status:");
                         Thread.sleep(1000);
-
                         System.out.println("Enemy health : " + eh);
                         System.out.println("Your health : " + ch);
-                        break;
-                    case 2:
+                    }
+                    case 2 -> {
                         System.out.println("enemy attacked but you healed too");
                         ch -= ea;
                         ch += ce;
                         System.out.println("Your health now : " + ch);
-                        break;
-                    case 3:
+                    }
+                    case 3 -> {
                         c.power();
                         eh = 0;
-                        break;
-                    case 4:
-                        System.out.println("Ekka dikki cha ra itu XD");
-                        break;
-                    default:
-                        System.out.println("OKAY");
-                        break;
+                    }
+                    case 4 -> c.jump();
+                    case 5 -> c.duck();
+                    case 6 -> System.out.println("Ekka dikki cha ra itu XD");
+                    default -> System.out.println("OKAY");
                 }
                 System.out.println("++++++++++++++++++++++++++++++++++++++++++");
             }
